@@ -20,6 +20,7 @@ customer_resource = CustomerResource()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(customer_resource.urls)),
-    url(r'^customer/', include('api.urls'))
+    url(r'^customer/', include('api.urls')),
+    url('r^item/', include('api.urls'))
 ]
 
