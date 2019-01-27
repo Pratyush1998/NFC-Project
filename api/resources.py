@@ -1,16 +1,8 @@
 from tastypie.resources import ModelResource
-from api.models import Note
-class NoteResource(ModelResource):
-    class Meta:
-        queryset = Note.objects.all()
-        resource_name = 'note'
-
-
-from tastypie.resources import ModelResource
-from api.models import Note
+from api.models import Customer
 from tastypie.authorization import Authorization
-class NoteResource(ModelResource):
+class CustomerResource(ModelResource):
     class Meta:
-        queryset = Note.objects.all()
-        resource_name = 'note'
+        queryset = Customer.objects.all()
+        resource_name = 'customer'
         authorization = Authorization()
