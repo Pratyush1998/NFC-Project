@@ -11,3 +11,6 @@ class Customer(models.Model):
 class Items(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     sku = models.IntegerField()
+
+    def _str_(self):
+        return "%s" % (self.sku)
