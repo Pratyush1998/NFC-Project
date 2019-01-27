@@ -8,8 +8,8 @@ class CustomerResource(ModelResource):
         resource_name = 'customer'
         authorization = Authorization()
 
-#class ItemResource(ModelResource):
- #   class Meta:
-  #      queryset = Items.objects.all()
-   #     resource_name = 'item'
-    #    authorization = Authorization()
+class ItemResource(ModelResource):
+    class Meta:
+        queryset = Items.objects.all()
+        resource_name = 'item'
+        authorization = Authorization()
