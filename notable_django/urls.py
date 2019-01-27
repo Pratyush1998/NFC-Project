@@ -24,6 +24,6 @@ item_resource = ItemResource()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^customer/', include(customer_resource.urls)),
-    url(r^item/', include(item_resource.urls)),
+    url('r^item/', include(item_resource.urls)),
 ]
 
