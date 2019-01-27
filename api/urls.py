@@ -7,7 +7,7 @@ item_resource = ItemResource()
 
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    #url(r'^$', views.index, name='index'),
     url(r'^customer/', include(customer_resource.urls)),
     url('r^item/', include(item_resource.urls)),
 ]
